@@ -2,8 +2,12 @@ package subtask2
 
 class MiniMaxSum {
 
-    // TODO: Complete the following function
+
     fun getResult(input: IntArray): IntArray {
-        throw NotImplementedError("Not implemented")
+        val min: Int? =input.min()
+        val max: Int? =input.max()
+        val summa:Int=input.sum()
+        return intArrayOf(summa- max!!,summa- min!!)
+
     }
 }
